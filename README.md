@@ -61,17 +61,3 @@ This Streamlit application allows users to process audio files in various ways. 
 ## Deployment
 
 This app can be deployed on Streamlit Cloud or any other Python-compatible hosting platform. Make sure to include all necessary files and set up the environment according to the `requirements.txt` file.
-
-## License
-
-[MIT License](https://opensource.org/licenses/MIT)
-
-## Contributing
-
-Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/yourusername/audio-processor/issues) if you want to contribute.
-
-## Author
-
-Your Name - [Your Email]
-
-Project Link: [https://github.com/yourusername/audio-processor](https://github.com/yourusername/audio-processor)
