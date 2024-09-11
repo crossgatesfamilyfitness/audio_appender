@@ -7,10 +7,17 @@ import os
 import tempfile
 from datetime import datetime
 import io
+import shutil
 
 class AudioProcessor:
     def __init__(self):
         self.static_audio_path = "Main_Line_AA.wav"
+        self._check_ffmpeg()
+
+    def _check_ffmpeg(self):
+        if not shutil.which("ffmpeg") or not shutil.which("ffprobe"):
+            st.error("FFmpeg is not installed or not in the system PATH. Please install FFmpeg to use this application.")
+            st.stop()
 
     def generate_output_filename(self, operation):
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
