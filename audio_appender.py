@@ -9,13 +9,17 @@ from datetime import datetime
 import io
 import shutil
 
+print(f"FFmpeg path: {shutil.which('ffmpeg')}")
+print(f"FFprobe path: {shutil.which('ffprobe')}")
+print(f"Current PATH: {os.environ.get('PATH')}")
+
 class AudioProcessor:
     def __init__(self):
         self.static_audio_path = "Main_Line_AA.wav"
         self._check_ffmpeg()
 
     def _check_ffmpeg(self):
-        if not shutil.which("ffmpeg") or not shutil.which("ffprobe"):
+        if not shutil.which("ffmpeg"):
             st.error("FFmpeg is not installed or not in the system PATH. Please install FFmpeg to use this application.")
             st.stop()
 
