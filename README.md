@@ -2,6 +2,10 @@
 
 This Streamlit application allows users to process audio files in various ways. Users can upload audio files (WAV, MP3, or M4A), and then choose to either convert the audio to a specific format, append it to a static audio file, or prepend it to a static audio file.
 
+## 2024-09-11 Update
+
+We created a packages.txt file to ensure FFmpeg is installed in cloud environments.
+
 ## Features
 
 - Upload audio files (WAV, MP3, M4A)
